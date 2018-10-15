@@ -2,18 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>calen</title>
+    <title>calendar</title>
+    <link rel="stylesheet" href="calen.css">
 </head>
 <body>
+    <!--<p>sdsd</p>-->
 <!--选择框-->
-    <input class="" type="text" >
+    <input id="choice" type="text" >
     <!--日历内容-->
     <div class="calendar-content">
         <div class="calendar-button">
-            <img src="">
+            <button class="button-left"></button>
+            <button class="button-year"></button>
+            <button class="button-right"></button>
         </div>
-        <div class="calendar-data"></div>
-        <div class="calendar-today"></div>
+        <div class="calendar-week">
+            <ul>
+                <li>一</li>
+                <li>二</li>
+                <li>三</li>
+                <li>四</li>
+                <li>五</li>
+                <li>六</li>
+                <li>日</li>
+            </ul>
+        </div>
+        <div class="calendar-day"></div>
+        <div class="calendar-today">
+            <button class="button-today">今天</button>
+        </div>
     </div>
 </body>
 </html>
