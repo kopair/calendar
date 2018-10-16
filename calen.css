@@ -1,10 +1,19 @@
-html,body,div,li,ul
+html,body,div,li,ul,button
 {
     padding:0;
     margin:0;
 }
+button{
+    background-color: white;
+    font-family: Arial;
+    border:none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #bebebe;
+}
 .calendar-content{
-    width: 180px;
+    width: 200px;
     height: 240px;
     border:1px solid #cdcdcd;
     border-radius: 10px;
@@ -13,12 +22,42 @@ html,body,div,li,ul
     position: absolute;
     background-color: white;
 }
+
 #choice{
     width: 150px;
     height:20px;
     border:1px solid #89888a;
     border-radius: 5px;
     margin:10px 10px auto;
+}
+.calendar-button{
+    width: 100%;
+    height:30px;
+    min-height:30px;
+}
+.button-left{
+    width:30px;
+    height:20px;
+    margin:5px 5px auto;
+    background-image:url("left.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.button-year{
+    width: 110px;
+    height: 20px;
+    min-height:20px;
+    margin: 5px auto;
+}
+.button-right{
+    width:30px;
+    height:20px;
+    margin:5px 5px auto;
+    background-image: url("right.png");
+    background-position:center;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 .calendar-week{
     height:30px;
@@ -33,4 +72,9 @@ html,body,div,li,ul
     font-size:14px;
     text-align: center;
     font-weight:bold;
+}
+.button-today{
+    width:180px;
+    height:20px;
+
 }
